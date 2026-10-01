@@ -1,0 +1,15 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Placeholder CI Step
+      run: echo "This is a placeholder for actual build and test steps."
